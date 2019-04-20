@@ -2,15 +2,21 @@
   "name": "web-api-node",
   "version": "1.0.0",
   "description": "Web node.js API",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "node.js",
     "api",
     "REST API"
   ],
   "author": "Kovalev Igor",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "GIT",
+    "url": "https://github.com/kovalevgr/web-api-node/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./bin/build.js",
+    "postinstall": "node ./bin/build.js"
+  }
 }
