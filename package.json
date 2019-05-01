@@ -20,19 +20,21 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js",
-    "postinstall": "node build.js"
+    "build": "node bin/build.js"
   },
   "dependencies": {
     "express": "^4.16.4",
     "module-alias": "^2.2.0",
-    "mongodb": "^3.2.3"
+    "mongodb": "^3.2.3",
+    "node-dependency-injection": "^2.3.3"
   },
   "_moduleAliases": {
     "@root": "./src/",
     "@domain": "./src/Domain/",
     "@hendlers": "./src/Hendlers/",
     "@services": "./src/Services/",
-    "@infrastructure": "./src/Infrastructure/"
+    "@infrastructure": "./src/Infrastructure/",
+
+    "config-dir": "./config/"
   }
 }
