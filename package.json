@@ -10,13 +10,29 @@
   "author": "Kovalev Igor",
   "license": "ISC",
   "repository": {
-    "type": "GIT",
-    "url": "https://github.com/kovalevgr/web-api-node/issues"
+    "type": "git",
+    "url": "git+https://github.com/kovalevgr/web-api-node.git"
   },
   "main": "index.js",
+  "engines": {
+    "node": ">= 6.9.0",
+    "npm": ">= 3.10.8"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./bin/build.js",
-    "postinstall": "node ./bin/build.js"
+    "build": "node build.js",
+    "postinstall": "node build.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "module-alias": "^2.2.0",
+    "mongodb": "^3.2.3"
+  },
+  "_moduleAliases": {
+    "@root": "./src/",
+    "@domain": "./src/Domain/",
+    "@hendlers": "./src/Hendlers/",
+    "@services": "./src/Services/",
+    "@infrastructure": "./src/Infrastructure/"
   }
 }
